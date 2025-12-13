@@ -11,6 +11,9 @@ import tqdm
 from tqdm import tqdm, trange
 from scipy import ndimage
 
+"""This script walks through the CAO identification algorithm as described
+Temperature data is daily mean ERA5 surface temperature over land"""
+
 def define_caos(temp_data_path, out_dir, quantile=0.03): # we use 3rd percentile
     # Ensure 'date' column is in datetime format
 

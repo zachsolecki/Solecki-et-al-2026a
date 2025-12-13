@@ -11,6 +11,8 @@ import tqdm
 from tqdm import tqdm, trange
 from scipy import ndimage
 
+"""This script cleans up the CAO binary array by applying threshoulds to remove small features"""
+
 def clean_up_caos_array(cao_binary, area_threshold=2000, depth_threshold=5):
     # convert from dataarray to numpy format
     da = xr.open_dataarray(cao_binary)
